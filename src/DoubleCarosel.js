@@ -156,7 +156,7 @@ const DoubleCarosel = () => {
                     
                        <img
                       className={classes.cardimg}
-                      src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                      src="./images/willsmith.jpg"
                     />
                     <Typography className={classes.cardTitle} style={{}}>will Smith</Typography>
                    <Typography className={classes.cardsubtitle}>CEO,Canton Management Services</Typography>
@@ -171,8 +171,7 @@ const DoubleCarosel = () => {
                     
                        <img
                       className={classes.cardimg}
-                      src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                    />
+                      src="./images/willsmith.jpg"                    />
                     <Typography className={classes.cardTitle} style={{}}>will Smith</Typography>
                    <Typography className={classes.cardsubtitle}>CEO,Canton Management Services</Typography>
                    <img className={classes.starimg} src="./images/5star.png"/>
@@ -190,8 +189,7 @@ const DoubleCarosel = () => {
                     
                        <img
                       className={classes.cardimg}
-                      src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                    />
+                      src="./images/willsmith.jpg"                    />
                     <Typography className={classes.cardTitle} style={{}}>will Smith</Typography>
                    <Typography className={classes.cardsubtitle}>CEO,Canton Management Services</Typography>
                    <img className={classes.starimg} src="./images/5star.png"/>
@@ -205,8 +203,7 @@ const DoubleCarosel = () => {
                     
                        <img
                       className={classes.cardimg}
-                      src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                    />
+                      src="./images/willsmith.jpg"                    />
                     <Typography className={classes.cardTitle} style={{}}>will Smith</Typography>
                    <Typography className={classes.cardsubtitle}>CEO,Canton Management Services</Typography>
                    <img className={classes.starimg} src="./images/5star.png"/>

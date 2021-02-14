@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     width: "50%",
+    color:"black",
+    filter: "invert(48%) sepia(13%) saturate(3207%) hue-rotate(335deg) brightness(95%) contrast(80%)",
+      
     [theme.breakpoints.down("xl")]: {
       width: "50%",
     },
@@ -40,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   logoContainer: {
     position: "absolute",
     left: "10%",
-    top: "1%",
+    top: "0%",
     width: "20%",
   },
   phoneContainer: {
@@ -63,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
     top: "10px",
     right: "2px",
     width: "100%",
+    fontWeight:"500",
     [theme.breakpoints.down("md")]: {
       fontSize: "10px",
     },
@@ -122,7 +126,7 @@ function Header(props) {
           <Grid item xl={3} md={2} className={classes.logoContainer}>
             <img
               className={classes.logo}
-              src="/images/companyLogo.png"
+              src="/images/logoBg.png"
               alt="companylogo"
             />
           </Grid>

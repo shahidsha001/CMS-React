@@ -37,12 +37,13 @@ const useStyles = makeStyles((theme) => ({
   paper1: {
     height: 250,
     width: 350,
-    backgroundColor: 'violet',
+    backgroundColor: '#0C2D48',
     position: 'relative',
     top: '10%',
     left: '22%',
     justifyContent: 'center',
     textAlign: 'center',
+    color:"white",
     [theme.breakpoints.down('md')]: {
       left: '15%',
       top: '10%',
@@ -55,11 +56,14 @@ const useStyles = makeStyles((theme) => ({
   paper2: {
     height: 300,
     width: 350,
-    backgroundColor: 'orangered',
+   backgroundColor: "#a40606",
+backgroundImage:" linear-gradient(315deg, #a40606 0%, #d98324 74%)",
+
     position: 'relative',
     justifyContent: 'center',
     textAlign: 'center',
     left: '14%',
+    color:"white",
 
     [theme.breakpoints.down('md')]: {
       left: '15%',
@@ -78,7 +82,8 @@ const useStyles = makeStyles((theme) => ({
     left: '9.8%',
     justifyContent: 'center',
     textAlign: 'center',
-    backgroundColor: 'yellow',
+    backgroundColor: '#2E8BC0',
+    color:"white",
     [theme.breakpoints.down('md')]: {
       left: '15%',
       top: '8%%',
