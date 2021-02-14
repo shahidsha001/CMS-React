@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     top: "10px",
     right: "2px",
     width: "100%",
-    fontWeight:"500",
+    
     [theme.breakpoints.down("md")]: {
       fontSize: "10px",
     },
@@ -135,7 +135,7 @@ function Header(props) {
               <PhoneInTalkOutlinedIcon
                 style={{ position: "relative", top: "15px", right: "50px" }}
               />
-              <Typography className={classes.phoneNumber} variant="h7">
+              <Typography className={classes.phoneNumber} variant="h6">
                 +1(242)848-2805
               </Typography>
               <Typography style={{ fontSize: "13px" }}>

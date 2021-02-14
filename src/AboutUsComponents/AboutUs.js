@@ -157,9 +157,9 @@ function AboutUs(props) {
               <div className="underline"></div>
               <Typography variant="h6" className={classes.cantonText}>
                 Canton Management Services,Inc was established in 2008,CMS is a
-                practical and <span>"SHOW-HOW"</span>type of Consultancy
+                practical and <span  style={{color:"#0C2D48",fontWeight:"600"}}>"SHOW-HOW"</span> type of Consultancy
                 Services organization.it has been instrumental in bringing a{' '}
-                <span>
+                <span  style={{color:"#0C2D48",fontWeight:"600"}}>
                   perceptible change in the companies'outlook image and
                   performance
                 </span>
@@ -182,13 +182,13 @@ function AboutUs(props) {
                 variant="subtitle1"
               >
                 Our core Competencies are Management Consultancy Services on
-                Integrated Management System <span>(IMS)</span>
-                .Busineess Process <span>Re-Engineering</span>. and Conctinual
+                Integrated Management System <span  style={{color:"#0C2D48",fontWeight:"600"}}>(IMS)</span>
+                .Busineess Process <span  style={{color:"#0C2D48",fontWeight:"600"}}>Re-Engineering</span>. and Conctinual
                 improvement.
               </Typography>
               <Typography variant="subtitle1" style={{ fontSize: '14px' }}>
                 We are well qualified,very experienced and holds certification
-                on Auditing,<span>CISA,ITIL</span>,Lean and Siz Sigma Black
+                on Auditing,<span  style={{color:"#0C2D48",fontWeight:"600"}}>CISA,ITIL</span>,Lean and Siz Sigma Black
                 Belts
               </Typography>
               <Typography style={{ fontSize: '14px' }} variant="subtitle1">
@@ -227,7 +227,7 @@ function AboutUs(props) {
                 <Typography>From Our Great Clients</Typography>
               </Grid>
               <Grid item xs={12} md={12}>
-                <Typography variant="h4" style={{ color: 'darkslateblue' }}>
+                <Typography variant="h4" style={{ color: '#0C2D48'  }}>
                   What clients Say About Us ?
                 </Typography>
               </Grid>

@@ -181,15 +181,16 @@ function Service(props) {
                 <Typography
                   gutterBottom
                   variant="subtitle1"
+                  
                 >
-                  <span>
+                  <span >
                     <img
                     style={{paddingRight:"10px"}}
                       className={classes.img}
                       alt="complex"
                       src="./images/logosmall.png"
                     />
-                  </span>
+                  </span >
                   Stratergic buissness planning
                 </Typography>
               </Grid>
@@ -287,7 +288,7 @@ QA as a Service(QAaaS)                </Typography>
                       src="./images/logosmall.png"
                     />
                   </span>
-<span>ISO 9001</span>- Quality Management System Requirements                </Typography>
+<span style={{color:"#0C2D48",fontWeight:"600"}}>ISO 9001</span>- Quality Management System Requirements                </Typography>
               </Grid>
               <Grid
                 item
@@ -306,7 +307,7 @@ QA as a Service(QAaaS)                </Typography>
                       src="./images/logosmall.png"
                     />
                   </span>
-                  <span>ISO 14001</span>- Environment Management System Requirements          
+                  <span style={{color:"#0C2D48",fontWeight:"600"}}>ISO 14001</span>- Environment Management System Requirements          
 
                 </Typography>
               </Grid>
@@ -327,7 +328,7 @@ QA as a Service(QAaaS)                </Typography>
                       src="./images/logosmall.png"
                     />
                   </span>
-                  <span>IATF 16949</span>- Quality Management System Requirements for automotive suppliers         
+                  <span style={{color:"#0C2D48",fontWeight:"600"}}>IATF 16949</span>- Quality Management System Requirements for automotive suppliers         
                 </Typography>
               </Grid>
               <Grid
@@ -347,7 +348,7 @@ QA as a Service(QAaaS)                </Typography>
                       src="./images/logosmall.png"
                     />
                   </span>
-                  <span>ISO/IEC 27001</span>- Information Security Management System Requirements        
+                  <span style={{color:"#0C2D48",fontWeight:"600"}}>ISO/IEC 27001</span>- Information Security Management System Requirements        
                 </Typography>
               </Grid>
               <Grid
@@ -367,7 +368,7 @@ QA as a Service(QAaaS)                </Typography>
                       src="./images/logosmall.png"
                     />
                   </span>
-                  <span>ISO/IEC 17025</span>- General requirements for the competency of testing and callibration laboratories     
+                  <span style={{color:"#0C2D48",fontWeight:"600"}}>ISO/IEC 17025</span>- General requirements for the competency of testing and callibration laboratories     
                 </Typography>
               </Grid>
             </Grid>
@@ -402,7 +403,7 @@ QA as a Service(QAaaS)                </Typography>
                       src="./images/logosmall.png"
                     />
                   </span>
-Implementation of <span>APQP,FMEA,MSA,SPC & PPAP for specific projects</span> </Typography>
+Implementation of <span style={{color:"#0C2D48",fontWeight:"600"}}>APQP,FMEA,MSA,SPC & PPAP for specific projects</span> </Typography>
               </Grid>
               <Grid
                 item
@@ -574,7 +575,7 @@ Perform Application control review</Typography>
                       src="./images/logosmall.png"
                     />
                   </span>
-Perform <span>IQ/QQ/PQ(software validation) per ICH Guidelines and <span>21CFR Part 11 complaince requirements</span></span>                </Typography>
+Perform <span style={{color:"#0C2D48",fontWeight:"600"}}>IQ/QQ/PQ(software validation) per ICH Guidelines and <span>21CFR Part 11 complaince requirements</span></span>                </Typography>
               </Grid>
               <Grid
                 item
@@ -612,7 +613,7 @@ Critical process analysis and development of Business Continuity and Disaster Re
                       src="./images/logosmall.png"
                     />
                   </span>
-Documentation of policies ,<span>SOPs,</span>,Operator instructions,Visual aids,Control plans and Training Materials relevant to Quality,information security ,and Environment Management area
+Documentation of policies ,<span style={{color:"#0C2D48",fontWeight:"600"}}>SOPs,</span>,Operator instructions,Visual aids,Control plans and Training Materials relevant to Quality,information security ,and Environment Management area
 </Typography>
               </Grid>
             </Grid>
@@ -711,7 +712,7 @@ Perform "AS IS" assesment to understand the baseline
                       src="./images/logosmall.png"
                     />
                   </span>
-prepare a detailed technical proposal and get agreement               
+Prepare a detailed technical proposal and get agreement               
  </Typography>
               </Grid>
               <Grid
@@ -732,7 +733,7 @@ prepare a detailed technical proposal and get agreement
                       src="./images/logosmall.png"
                     />
                   </span>
-prepare a commercial proposal and get agreement
+Prepare a commercial proposal and get agreement
                 </Typography>
               </Grid>
               <Grid

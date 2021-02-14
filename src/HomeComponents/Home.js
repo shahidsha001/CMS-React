@@ -18,6 +18,7 @@ import Slider from 'react-slick';
 import SimpleCarosel from '../SimpleCarosel';
 import FooterPage from '../Footer';
 import NavBArMat from '../NavBarMat';
+import Fade from 'react-reveal/Fade';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     width: 350,
     backgroundColor: '#0C2D48',
     position: 'relative',
-    top: '10%',
+    top: '10px',
     left: '22%',
     justifyContent: 'center',
     textAlign: 'center',
@@ -64,7 +65,6 @@ backgroundImage:" linear-gradient(315deg, #a40606 0%, #d98324 74%)",
     textAlign: 'center',
     left: '14%',
     color:"white",
-
     [theme.breakpoints.down('md')]: {
       left: '15%',
       height: 250,
@@ -78,12 +78,13 @@ backgroundImage:" linear-gradient(315deg, #a40606 0%, #d98324 74%)",
     height: 250,
     width: 350,
     position: 'relative',
-    top: '10%',
-    left: '9.8%',
+    top: '10px',
+    left: '9.6%',
     justifyContent: 'center',
     textAlign: 'center',
     backgroundColor: '#2E8BC0',
     color:"white",
+   
     [theme.breakpoints.down('md')]: {
       left: '15%',
       top: '8%%',
@@ -180,6 +181,7 @@ backgroundImage:" linear-gradient(315deg, #a40606 0%, #d98324 74%)",
     position: 'relative',
     left: '15px',
     marginTop: '10px',
+    backgroundColor:"#0C2D48"
   },
   partnerContainer: {
     display: 'flex',
@@ -241,6 +243,7 @@ backgroundImage:" linear-gradient(315deg, #a40606 0%, #d98324 74%)",
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
+    backgroundColor:"#0C2D48"
   },
   blogImg1: {
     width: '100%',
@@ -249,16 +252,19 @@ backgroundImage:" linear-gradient(315deg, #a40606 0%, #d98324 74%)",
     fontSize: '8px',
     paddingRight: '10px',
     paddingLeft: '10px',
+    color:"white"
   },
   blogTitleText: {
     fontSize: '16px',
     paddingRight: '10px',
     paddingLeft: '10px',
+    color:"white"
   },
   blogContent: {
     fontSize: '8px',
     paddingRight: '10px',
     paddingLeft: '10px',
+    color:"white"
   },
   blogCard: {
     justifyContent: 'left',
@@ -289,10 +295,10 @@ function Home(props) {
         <NavBArMat/>
         <Grid xl="auto" container>
           <Grid item spacing={2} xs={12} className={classes.cmsContent}>
-            <Typography style={{ marginBottom: '30px' }} variant="h4">
+            <Typography style={{ marginBottom: '30px',fontFamily:"Noto Sans KR, sans-serif" }} variant="h4">
               CMS IS A
             </Typography>
-            <Typography style={{ marginBottom: '30px' }} variant="h2">
+            <Typography style={{ marginBottom: '30px',fontFamily: 'Hammersmith One, sans-serif' }} variant="h2">
               PRACTICAL & "SHOW-HOW"
             </Typography>
             <Typography style={{ marginBottom: '30px' }} varitant="h4">
@@ -328,7 +334,8 @@ function Home(props) {
           <Grid item xs={12}>
             <Grid container justify="center" spacing={2}>
               <Grid item>
-                <Paper className={classes.paper1} elevation={0}>
+              <Fade left delay={1000}>
+                <Paper className={classes.paper1} elevation={0} >
                   <img
                     style={{
                       width: '50px',
@@ -364,9 +371,12 @@ function Home(props) {
                     Read More
                   </Typography>
                 </Paper>
+                </Fade>
               </Grid>
+             
               <Grid item>
-                <Paper className={classes.paper2} elevation={0}>
+              <Fade bottom delay={1000}>
+                <Paper className={classes.paper2} elevation={0} >
                   <img
                     className={classes.card2img}
                     style={{ width: '50px', marginBottom: '20px' }}
@@ -399,9 +409,13 @@ function Home(props) {
                     Read More
                   </Typography>
                 </Paper>
+                </Fade>
               </Grid>
+             
+              
               <Grid item>
-                <Paper className={classes.paper3} elevation={0}>
+              <Fade right delay={1000}>
+                <Paper className={classes.paper3} elevation={0} >
                   <img
                     style={{
                       width: '50px',
@@ -437,31 +451,35 @@ function Home(props) {
                     Read More
                   </Typography>
                 </Paper>
+                </Fade>
               </Grid>
+             
             </Grid>
           </Grid>
 
           <Grid item xs={12} md={6} className={classes.image1Container}>
+          <Fade left delay={1000}>
             <img className={classes.img1} src="../images/looking.jpg" />
 
             <img className={classes.img2} src="../images/working.jpg" />
             <img className={classes.imgLogo} src="../images/logosmall.png" />
+            </Fade>
           </Grid>
           <Grid item className={classes.cantonContainer}>
+           
             <div class="devicer"></div>
             <Typography style={{ marginLeft: '40px' }}>About Us</Typography>
+            <Fade right>
             <Typography
-              style={{ width: '50%' }}
+              style={{ width: '50%',color:"#0C2D48" }}
               variant="h3"
               gutterBottom="true"
             >
               Canton Management
             </Typography>
             <Typography variant="subtitle" gutterBottom="true">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime
-              asperiores accusamus enim, fuga pariatur blanditiis ullam hic
-              tempore id cupiditate laborum ipsum minus, maiores, quo optio
-              magnam nulla assumenda.
+                                 Our core competencies are <span style={{color:"#0C2D48",fontWeight:"600"}}>Management Consultancy Services</span> on integrated Management System(IMS),Business Process <span style={{color:"#0C2D48",fontWeight:"600"}}>Re-Engineering</span> and improvement                  
+
             </Typography>
             <Button
               className={classes.btnLearn}
@@ -475,6 +493,7 @@ function Home(props) {
             >
               Learn More
             </Button>
+            </Fade>
           </Grid>
           <Grid container className={classes.newsnblog} spacing={3}>
             <Grid
@@ -484,8 +503,8 @@ function Home(props) {
               xl={12}
               className={classes.blogContainer}
             >
-              <Typography> Our </Typography>
-              <Typography> News & blog </Typography>
+              <Typography style={{color:"white"}}> Our </Typography>
+              <Typography style={{color:"white",fontWeight:"600"}}> News & blog </Typography>
             </Grid>
             <Grid item xs={12} md={4} className={classes.blogCard}>
               <Paper
@@ -567,7 +586,7 @@ function Home(props) {
             </Grid>
 
             <Grid item xs={12} md={12} xl={12} className={classes.blogBtn}>
-              <Button variant="outlined" style={{ color: 'black' }}>
+              <Button variant="outlined" style={{ color: 'black',backgroundColor:"white",borderRadius:"20px" }}>
                 Go To Blog
               </Button>
             </Grid>
