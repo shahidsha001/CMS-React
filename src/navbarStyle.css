@@ -1,0 +1,68 @@
+.fixed{
+display: none;
+}
+.styles_header__3PFGX{
+    background-color: orangered !important;
+    height: 80px !important;
+    top: 20% !important;
+   
+    right: 11% !important;
+    width: 78% !important;
+    
+   
+  
+    
+}
+.MobileNav_MoNavContainer__1ilEr{
+    position:absolute;
+    bottom:74%;
+    left:11%;
+    width:78%;
+   height: 8vh;
+}
+.MobileNav_MoNavLinks__mNUdF li{
+    background-color: orangered;
+    height: 106px !important;
+
+}
+.MobileNav_MoNavLinks__mNUdF a{
+    color: white !important;
+}
+.styles_LogoImg__2wRK6{
+    display: none !important;
+}
+.MobileNav_mobileNav__1-78d{
+    background-color: orangered !important;
+    height: 80px !important;
+
+
+}
+.MobileNav_MoNavLogo__C8_0h img{
+    display: none !important;
+}
+.styles_navLinks__38tON ul{
+    position:  relative !important;
+    right: 81%;
+}
+.styles_navSocial__3JBh_ ul{
+    position: relative;
+    right: 10%;
+}
+.MobileNav_navBars__31q_E svg {
+   
+    position: relative !important;
+    bottom: 5% !important;
+}
+.MobileNav_MoNavSocial__ozVHB ul {
+   
+    position: relative !important;
+    bottom: 10% !important;
+}
+.styles_navLinks__38tON a{
+    width: 144px;
+}
+.styles_navLinks__38tON {
+    width: 0;
+    position: relative;
+    left: 20%;
+}

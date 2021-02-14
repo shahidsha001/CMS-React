@@ -1,0 +1,20 @@
+.MuiButton-label{
+    font-size: 11px;
+}
+.MuiPaper-rounded {
+    border-radius: 0px !important;
+}
+.MuiGrid-spacing-xs-2{
+    width: 100% !important;
+}
+.devicer {
+    width: 2em;
+    display: block;
+    height: 5px;
+    background-color: #4b4b4d;
+    margin: 60px auto 0;
+    position: relative;
+    right: 47.5%;
+    top:2%;
+  }
+ 

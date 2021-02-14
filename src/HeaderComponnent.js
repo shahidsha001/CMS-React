@@ -1,0 +1,173 @@
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import { Box, Button, Hidden, Typography } from '@material-ui/core';
+import PhoneInTalkOutlinedIcon from '@material-ui/icons/PhoneInTalkOutlined';
+import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
+
+
+const useStyles = makeStyles((theme) => ({
+    imageContainer:{
+       
+       
+    },
+    
+    root: {
+        flexGrow: 1,
+      },
+   companyImg:{
+    margin: 0,
+    display: "block",
+    objectFit: "cover",
+    width: "100%",
+    height: "auto",
+    position:"absolute",
+    opacity:".4",
+   maxWidth:"100%",
+    maxHeight: "102vh",
+    [theme.breakpoints.down("md")]: {
+       height:"103%"  
+    },  
+    [theme.breakpoints.down("xs")]: {
+        height:"83%"  
+     },  
+
+},
+   logo:{
+width:"50%",
+[theme.breakpoints.down("xl")]: {
+    width:"50%",  
+},
+},
+
+   logoContainer:{
+      position:"absolute",
+      left:"10%",
+      top:"1%",
+      width:"20%", 
+   },
+   phoneContainer:{
+       position:"absolute",
+       left:"30%",
+       top:"4%"
+   },
+   phoneDetails:{
+       position:"absolute",
+       left:"40px",
+       top:"-15px",
+       width:"130px",
+       [theme.breakpoints.down("md")]: {
+        fontSize:"10px",
+        
+    },
+       
+       
+     
+   },
+   phoneNumber:{
+fontSize:"12px",
+position:"absolute",
+top:"10px",
+right:"2px",
+width:"100%",
+[theme.breakpoints.down("md")]: {
+    fontSize:"10px",
+    
+},
+   },
+   email:{
+position:"absolute",
+top:"-4px",
+left:"60px",
+fontSize:"13px",
+
+[theme.breakpoints.down("md")]: {
+    fontSize:"10px",
+    
+},
+   },
+   emailContainer:{
+position:"absolute",
+left:"50%",
+top:"20px",
+[theme.breakpoints.down("md")]: {
+ 
+},
+
+   },
+   emailText:{
+    fontSize:"13px",
+   left:"48px",
+   bottom:"24px",
+   position:"relative",
+   [theme.breakpoints.down("md")]: {
+    fontSize:"12px"
+},
+   
+   },
+   touchBtn:{
+    [theme.breakpoints.down("md")]: {
+    
+    },
+   },
+   inTouchBtn:{
+    position: "absolute",
+    
+    left:"80%",
+    top:"1%",
+    [theme.breakpoints.down("md")]: {
+        
+      },
+   
+   },
+   
+  }));
+
+
+
+
+
+function HeaderComponent(props) {
+    const classes = useStyles();
+    return (
+        <div className={classes.root}>
+            
+            {/* <Navbar/> */}
+                     
+
+             <Grid container spacing={3}>
+
+             
+        <Hidden xsDown >
+        <Grid item xl={3} md={2}  className={classes.logoContainer} >
+       
+            <img className={classes.logo} src="/images/companyLogo.png" alt="companylogo"/>
+           
+        </Grid>
+        <Grid item xl={3} md={2} className={classes.phoneContainer}>
+        <div className={classes.phoneDetails}>
+            <PhoneInTalkOutlinedIcon style={{position:"relative",top:"15px",right:"50px"}}/>
+            <Typography className={classes.phoneNumber} variant="h7">+1(242)848-2805</Typography>
+            <Typography style={{fontSize:"13px"}}>Give us a call</Typography>
+            </div>
+        </Grid>
+        <Grid item xl={3} md={2} className={classes.emailContainer} >
+        <div className={classes.emailDetails}>
+            <EmailOutlinedIcon  style={{position:"relative",top:"-10px"}}/>
+            <Typography className={classes.email} variant="h6">cantonManagement@gmail.com</Typography>
+            <Typography className={classes.emailText}>Get in Touch</Typography>
+            </div>
+        </Grid>
+        <Grid item xl={3} md={2} className={classes.inTouchBtn} >
+
+<Button className={classes.touchBtn} variant="outlined" size="small">Get in Touch</Button>
+        </Grid>
+        </Hidden>
+       
+             </Grid>
+            
+        </div>
+    );
+}
+
+export default HeaderComponent;

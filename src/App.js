@@ -1,24 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Home from './HomeComponents/Home';
+import AboutUs from './AboutUsComponents/AboutUs';
+import Contact from './Contact/ContactComponent';
+import Blog from './BlogComponents/Blog';
+import Testimonials from './TestimonialComponents/Testimonial';
+import Client from './ClientComponents/Client';
+import WorkShop from './TrainingWorkshopComponents/WorkShop';
+import Service from './ServiceComponents/Service';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import NavbarMat from './NavBarMat';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* <Home /> */}
+        {/* <AboutUs/> */}
+        {/* <Contact/> */}
+        {/* <Blog/> */}
+        {/* <Testimonials/> */}
+        {/* <Client/> */}
+        {/* <WorkShop/> */}
+        {/* <Service/> */}
+
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={AboutUs} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/testimonial" exact component={Testimonials} />
+          <Route path="/client" exact component={Client} />
+          <Route path="/workshop" exact component={WorkShop} />
+          <Route path="/service" exact component={Service} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

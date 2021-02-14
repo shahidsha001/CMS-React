@@ -1,0 +1,9 @@
+.underline{
+    width: 112px;
+height: 47px;
+border-bottom: 3px solid orangered;
+}
+footer.page-footer{
+    width:100%;
+    
+}
